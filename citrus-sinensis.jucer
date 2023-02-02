@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="LQDN0Y" name="citrus-sinensis" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginFormats="buildAU" pluginVST3Category="Fx">
+  <MAINGROUP id="O6rJUo" name="citrus-sinensis">
+    <GROUP id="{8340CD01-06B5-E101-965E-87C481612D77}" name="Source">
+      <FILE id="V31x5a" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="Y5oAhr" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="vPI63k" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="skEjPl" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="citrus-sinensis"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="citrus-sinensis"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../Downloads/apps/juce/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
