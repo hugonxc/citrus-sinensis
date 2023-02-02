@@ -19,6 +19,13 @@ CitrussinensisAudioProcessorEditor::CitrussinensisAudioProcessorEditor (Citrussi
     // editor's size to whatever you need it to be.
     setSize (400, 300);
     startTimerHz (30);
+    
+    gainDial.setSliderStyle(juce::Slider::SliderStyle::Rotary);
+    gainDial.setTextBoxStyle(juce::Slider::TextBoxBelow, false, 100, 50);
+    gainDial.setRange(-48.0, 10.0);
+    gainDial.setValue(-1.0);
+    gainDial.addListener(this);
+    addAndMakeVisible(gainDial);
 }
 
 CitrussinensisAudioProcessorEditor::~CitrussinensisAudioProcessorEditor()
@@ -44,8 +51,10 @@ void CitrussinensisAudioProcessorEditor::paint (juce::Graphics& g)
 
 void CitrussinensisAudioProcessorEditor::resized()
 {
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
+    juce::Rectangle<int> area = getBounds();
+    
+    gainDial.setBounds(area.removeFromTop(getHeight() / 2));
+    
 }
 
 //==============================================================================
@@ -73,4 +82,13 @@ void CitrussinensisAudioProcessorEditor::drawNextFrameOfSpectrum ()
      
         audioProcessor.scopeData[i] = level;
     }
+}
+
+//==============================================================================
+void CitrussinensisAudioProcessorEditor::sliderValueChanged(juce::Slider* slider)
+{
+        if (slider == &gainDial)
+        {
+            audioProcessor.rawVolume = pow(10, gainDial.getValue() / 20);
+        }
 }

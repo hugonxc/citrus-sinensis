@@ -57,6 +57,9 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
     
     //==============================================================================
+    double rawVolume;
+
+    //==============================================================================
     void pushNextSampleIntoFifo (float sample) noexcept;
     
     enum

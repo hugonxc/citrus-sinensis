@@ -154,8 +154,12 @@ void CitrussinensisAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
     {
         auto* channelData = buffer.getWritePointer (channel);
         
-        for (auto i = 0; i < buffer.getNumSamples(); ++i)
-            pushNextSampleIntoFifo (channelData[i]);
+        for (auto sample = 0; sample < buffer.getNumSamples(); ++sample)
+        {
+            channelData[sample] = buffer.getSample(channel, sample) * rawVolume;
+            pushNextSampleIntoFifo (channelData[sample]);
+        }
+
 
     }
 }
