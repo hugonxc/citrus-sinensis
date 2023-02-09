@@ -32,8 +32,13 @@ public:
     void drawNextFrameOfSpectrum();
     void drawFrame (juce::Graphics& g);
     
-
+    //==============================================================================
+    juce::Rectangle<int> titleLeftRect, titleRightRect, titleLogoRect;
     
+    juce::Rectangle<int> spectrumRect;
+    
+    juce::Rectangle<int> gainRect;
+
 private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.

@@ -13,6 +13,7 @@
             file="Source/PluginEditor.cpp"/>
       <FILE id="skEjPl" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
+    <FILE id="Y8ipgM" name="orange.png" compile="0" resource="1" file="Source/orange.png"/>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
   <EXPORTFORMATS>

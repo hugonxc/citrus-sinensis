@@ -64,9 +64,9 @@ public:
     
     enum
     {
-        fftOrder  = 11,
+        fftOrder  = 10,
         fftSize   = 1 << fftOrder,
-        scopeSize = 512
+        scopeSize = 60
     };
     
     float fifo [fftSize];
