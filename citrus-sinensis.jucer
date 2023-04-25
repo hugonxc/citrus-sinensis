@@ -2,7 +2,7 @@
 
 <JUCERPROJECT id="LQDN0Y" name="citrus-sinensis" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
-              pluginFormats="buildAU" pluginVST3Category="Fx">
+              pluginFormats="buildAU,buildVST3" pluginVST3Category="Fx">
   <MAINGROUP id="O6rJUo" name="citrus-sinensis">
     <GROUP id="{8340CD01-06B5-E101-965E-87C481612D77}" name="Source">
       <FILE id="V31x5a" name="PluginProcessor.cpp" compile="1" resource="0"
